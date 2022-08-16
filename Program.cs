@@ -1,6 +1,28 @@
 ﻿void Z1() 
 {
-
+Random ra = new Random();
+int si = ra.Next(3, 12);
+int [] ray = new int[si];
+int bnum = ra.Next(3, 12);
+int cnum = ra.Next(3, 12);
+int [,] table = new int[bnum, cnum];
+for (int i = 0, bar = 0; bar<bnum; bar++) 
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        int num = ra.Next(3, 12);
+        ray[i] = num;
+        Console.Write(ray[i] + "\t");
+    }
+for (int i2 = 0, bar2 = 0; bar2<1; bar2++) 
+{
+    for (int col = 0; col<cnum; i2++, col++)
+    {
+        Console.WriteLine();
+        Console.Write(ray[i] + "\t");
+    }
+}
+}
 }
 Z1();
 
