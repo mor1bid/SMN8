@@ -64,14 +64,14 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 Console.WriteLine();
 if (bnum == cnum) 
 {
-for (int temp = 0, i = 0, bar = 0; i<bnum; i++, bar++) 
+for (int temp = 0, bar = 0; bar<bnum; bar++) 
 {
-    for (int j = i+1, col = 0; j<cnum; j++, col++)
+    for (int col = bar+1; col<cnum; col++)
     {
-        temp = table[i, j];
-        table[i, j] = table[j, i];
-        table[j, i] = temp;
-        Console.Write(ray[i] + "\t");
+        temp = table[bar, col];
+        table[bar, col] = table[bar, col];
+        table[bar, col] = temp;
+        Console.Write(ray[bar] + "\t");
     }
     Console.WriteLine("");
 }
