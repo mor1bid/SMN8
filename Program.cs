@@ -21,17 +21,16 @@ for (int imin = 0, imax = 0, j = 0, t = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; j++, col++)
     {
-        if(bar==0) 
-        {
-            //Console.Write(ray[i] + "\t");
-            imax++;
-        }
-        else Console.Write(ray[j] + "\t");
-        if (bar+1 == bnum) 
+        if(bar+1==bnum) 
         {
             t = ray[imin];
             ray[imin] = ray[imax];
             ray[imax] = t;
+            imax++;
+        }
+        else if (bar>0) Console.Write(ray[j] + "\t");
+        if (bar==0) 
+        {
             Console.Write(ray[imin] + "\t");
             Console.Write(ray[t] + "\t");
         }
