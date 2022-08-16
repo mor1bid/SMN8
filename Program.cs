@@ -107,18 +107,19 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 //int[] ray = new int[10];
 }
+int[] count = new int[10];
 for(int bar = 0; bar < bnum; bar++) 
 {
     for (int col = 0; col<cnum; col++) 
     {
-        ray[table[bar, col]]++;
+        count[table[bar, col]]++;
     }
 }
 Console.WriteLine();
 Console.WriteLine("Вывод ответа");
 for(int bar = 0; bar < si; bar++) 
 {
-    if (ray[bar]> 0) Console.WriteLine($"число {bar} встречается {ray[bar]} раз(-а)");
+    if (count[bar]> 0) Console.WriteLine($"число {bar} встречается {count[bar]} раз(-а)");
 }
 }
 Z3();
