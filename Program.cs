@@ -86,4 +86,39 @@ for (int bar = 0; bar<bnum; bar++)
 
 } else { Console.WriteLine("Замена строк и столбцов не представляется возможной."); }
 }
-Z2();
+//Z2();
+
+void Z3()
+{
+    Random ra = new Random();
+int bnum = ra.Next(3, 12);
+int cnum = ra.Next(3, 12);
+int si = bnum*cnum;
+int [] ray = new int[si];
+int [,] table = new int[bnum, cnum];
+for (int i = 0, bar = 0; bar<bnum; bar++) 
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        int num = ra.Next(3, 12);
+        ray[i] = num;
+        Console.Write(ray[i] + "\t");
+    }
+    Console.WriteLine("");
+//int[] ray = new int[10];
+}
+for(int bar = 0; bar < bnum; bar++) 
+{
+    for (int col = 0; col<cnum; col++) 
+    {
+        ray[table[bar, col]]++;
+    }
+}
+Console.WriteLine();
+Console.WriteLine("Вывод ответа");
+for(int bar = 0; bar < si; bar++) 
+{
+    if (ray[bar]> 0) Console.WriteLine($"число {bar} встречается {ray[bar]} раз(-а)");
+}
+}
+Z3();
