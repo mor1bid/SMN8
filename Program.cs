@@ -74,12 +74,11 @@ for (int temp = 0, bar = 0; bar<bnum; bar++)
         Console.Write(ray[bar] + "\t");
     }
 }
-for (int i = 0, bar = 0; bar<bnum; bar++) 
+for (int bar = 0; bar<bnum; bar++) 
 {
-    for (int col = 0; col<cnum; i++, col++)
+    for (int j = 0, i = 0, col = 0; col<cnum; col++)
     {
-        int num = ra.Next(3, 12);
-        ray[i] = num;
+        ray[j] = ray[i];
         Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
