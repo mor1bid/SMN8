@@ -45,8 +45,9 @@ for (int imin = 0, imax = 0, j = 0, t = 0, bar = 0; bar<bnum; bar++)
 void Z2() 
 {
 Random ra = new Random();
-int bnum = ra.Next(3, 12);
-int cnum = ra.Next(3, 12);
+Console.WriteLine("Введите равные значения строки и столбца");
+int bnum = Convert.ToInt32(Console.ReadLine());
+int cnum = Convert.ToInt32(Console.ReadLine());
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
@@ -61,7 +62,8 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-if (bnum == cnum)
+if (bnum == cnum) 
+{
 for (int temp = 0, i = 0, bar = 0; i<bnum; i++, bar++) 
 {
     for (int j = i+1, col = 0; j<cnum; j++, col++)
@@ -73,5 +75,7 @@ for (int temp = 0, i = 0, bar = 0; i<bnum; i++, bar++)
     }
     Console.WriteLine("");
 }
+}
+else Console.WriteLine("Замена строк и столбцов не представляется возможной.");
 }
 Z2();
