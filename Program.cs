@@ -17,13 +17,17 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-for (int i = 0, j = 0, bar = 0; bar<=bnum; bar++) 
+for (int i = 0, j = 0, bar = 0; bar<bnum; bar++) 
 {
-    for (int col = 0; col<cnum; i++, col++)
+    for (int col = 0; col<cnum; i++, j++, col++)
     {
-        if(bar==0 || bar==bnum) 
+        if(bar==0) 
         {
             Console.Write(ray[i] + "\t");
+        }
+        else if (bar+1 == bnum) 
+        {
+            Console.Write(ray[j] + "\t");
         }
     }
     Console.WriteLine("");
