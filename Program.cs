@@ -69,8 +69,8 @@ for (int temp = 0, bar = 0; bar<bnum; bar++)
     for (int col = bar+1; col<cnum; col++)
     {
         temp = table[bar, col];
-        table[bar, col] = table[bar, col];
-        table[bar, col] = temp;
+        table[bar, col] = table[col, bar];
+        table[col, bar] = temp;
         Console.Write(ray[bar] + "\t");
     }
     Console.WriteLine("");
