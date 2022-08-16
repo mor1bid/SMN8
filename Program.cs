@@ -14,12 +14,13 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         ray[i] = num;
         Console.Write(ray[i] + "\t");
     }
+    Console.WriteLine("");
 for (int i2 = 0, bar2 = 0; bar2<1; bar2++) 
 {
     for (int col = 0; col<cnum; i2++, col++)
     {
         Console.WriteLine();
-        Console.Write(ray[i] + "\t");
+        Console.Write(ray[i2] + "\t");
     }
 }
 }
