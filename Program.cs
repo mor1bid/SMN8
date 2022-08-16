@@ -73,9 +73,18 @@ for (int temp = 0, bar = 0; bar<bnum; bar++)
         table[col, bar] = temp;
         Console.Write(ray[bar] + "\t");
     }
+}
+for (int i = 0, bar = 0; bar<bnum; bar++) 
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        int num = ra.Next(3, 12);
+        ray[i] = num;
+        Console.Write(ray[i] + "\t");
+    }
     Console.WriteLine("");
 }
+
+} else { Console.WriteLine("Замена строк и столбцов не представляется возможной."); }
 }
-else Console.WriteLine("Замена строк и столбцов не представляется возможной.");
-}
-Z2();
+//Z2();
