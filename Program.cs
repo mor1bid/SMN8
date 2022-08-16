@@ -17,7 +17,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-for (int i = 0, j = 0, bar = 0; bar<bnum; bar++) 
+for (int i = 0, j = 0, t = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, j++, col++)
     {
@@ -27,6 +27,9 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         }
         else if (bar+1 == bnum) 
         {
+            t = ray[i];
+            ray[i] = ray[j];
+            ray[j] = t;
             Console.Write(ray[j] + "\t");
         }
     }
