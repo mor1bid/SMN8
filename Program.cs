@@ -15,14 +15,15 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
-for (int i2 = 0, bar2 = 0; bar2<1; bar2++) 
+}
+for (int i = 0, bar = 0; bar<1; bar++) 
 {
-    for (int col = 0; col<cnum; i2++, col++)
+    for (int col = 0; col<cnum; i++, col++)
     {
         Console.WriteLine();
-        Console.Write(ray[i2] + "\t");
+        Console.Write(ray[i] + "\t");
+        Console.WriteLine("");
     }
-}
 }
 }
 Z1();
