@@ -1,10 +1,10 @@
 ﻿void Z1() 
 {
 Random ra = new Random();
-int [] ray = new int[si];
 int bnum = ra.Next(3, 12);
 int cnum = ra.Next(3, 12);
 int si = bnum*cnum;
+int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
