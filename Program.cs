@@ -78,6 +78,7 @@ for (int bar = 0; bar<bnum; bar++)
 {
     for (int j = 0, i = 0, col = 0; col<cnum; col++)
     {
+        table[i, j] = ray[i];
         Console.Write(table[i, j] + "\t");
     }
     Console.WriteLine("");
