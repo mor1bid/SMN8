@@ -20,7 +20,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        if(bar>1 || bar==cnum) 
+        if(bar>1 || bar==bnum) 
         {
             Console.WriteLine();
             Console.Write(ray[i] + "\t");
