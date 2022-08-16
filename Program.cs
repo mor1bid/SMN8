@@ -30,7 +30,7 @@ for (int i = 0, j = 0, t = 0, bar = 0; bar<bnum; bar++)
             t = ray[i];
             ray[i] = ray[j];
             ray[j] = t;
-            Console.Write(ray[j] + "\t");
+            Console.Write(ray[i] + "\t");
         }
     }
     Console.WriteLine("");
