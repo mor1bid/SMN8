@@ -87,4 +87,4 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 
 } else { Console.WriteLine("Замена строк и столбцов не представляется возможной."); }
 }
-//Z2();
+Z2();
