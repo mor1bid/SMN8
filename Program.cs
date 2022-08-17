@@ -1,4 +1,4 @@
-﻿void Z1() 
+﻿void DZ1() 
 {
 Random ra = new Random();
 int bnum = ra.Next(3, 12);
@@ -37,4 +37,4 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 }
 
 }
-//Z1();
+DZ1();
