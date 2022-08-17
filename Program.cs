@@ -63,7 +63,7 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        if (ray[i]<=min) 
+        if (ray[i]<min) 
         { 
             min = ray[i];
             count++;
@@ -72,7 +72,8 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
     }
     Console.WriteLine("");
 }
-Console.WriteLine("Строка с наименьшим значением " + min + " находится на " + count + "месте.");
+count--;
+Console.WriteLine("Строка с наименьшим значением " + min + " находится на " + count + " месте.");
 }
 
 //DZ1();
