@@ -14,13 +14,6 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
     {
         int num = ra.Next(3, 12);
         ray[i] = num;
-        // if (ray[i]<=min) 
-        // { 
-        //     tmp = min;
-        //     min = ray[i];
-        //     Console.Write(ray[i] + "\t");
-        //     ray[i] = tmp;
-        // }
         Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
@@ -39,7 +32,6 @@ Console.WriteLine();
         { 
             tmp = min;
             min = ray[i];
-            Console.Write(ray[i] + "\t");
             ray[i] = tmp;
         }
         // if (bar==bnum-1) { Console.Write(tmp + "\t"); }
@@ -50,6 +42,13 @@ Console.WriteLine();
          //     Console.Write(ray[i] + "\t");
          //     ray[i] = tmp2;
          // }
+     }
+     for (int col = 0; col<cnum; i++, col++)
+     {
+        if (ray[i]>=min) 
+        { 
+        Console.WriteLine(ray[i] + "\t");
+        }
      }
      Console.WriteLine("");
      j += cnum;
