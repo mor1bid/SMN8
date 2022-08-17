@@ -22,6 +22,7 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
     int max = ray[j];
     int min = ray[j];
     int tmp = 0;
+    int tmp2 = 0;
     for (int col = 0; col<cnum; i++, col++)
     {
         if (ray[i]<=min) 
@@ -33,10 +34,10 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         }
         if (ray[i]>=max)
         {
-            tmp = max;
+            tmp2 = max;
             max = ray[i];
             Console.Write(ray[i] + "\t");
-            ray[i] = tmp;
+            ray[i] = tmp2;
         }
         //Console.Write(ray[i] + "\t");
     }
