@@ -24,18 +24,19 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
     int tmp = 0;
     for (int col = 0; col<cnum; i++, col++)
     {
-        if (ray[i]<=min) 
+        if (ray[i]>=max) 
         { 
-            tmp = min;
-            min = ray[i];
+            tmp = max;
+            max = ray[i];
             Console.Write(ray[i] + " ");
             ray[i] = tmp;
         }
-        if (ray[i]>=max)
+        if (ray[i]<=min)
         {
-            tmp = max;
-            max = ray[i];
+            tmp = min;
+            min = ray[i];
             Console.Write(ray[i] + " " + "\t");
+            ray[i] = tmp;
         }
         //Console.Write(ray[i] + "\t");
     }
