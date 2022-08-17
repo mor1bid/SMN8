@@ -47,11 +47,11 @@ Console.WriteLine();
          //     ray[i] = tmp2;
          // }
      }
-     for (int col = 0; col<cnum; i++, col++)
+     for (int i2 = 0, col = 0; col<cnum; i2++, col++)
      {
-        if (ray[i]>=min && ray[i]<=max) 
+        if (ray[i2]>=min && ray[i2]<=max) 
         { 
-        Console.Write(ray[i] + "\t");
+        Console.Write(ray[i2] + "\t");
         }
      }
      Console.WriteLine("");
