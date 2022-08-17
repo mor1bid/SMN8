@@ -41,8 +41,8 @@ Console.WriteLine("");
 void DZ2() 
 {
 Random ra = new Random();
-int bnum = 3;
-int cnum = 6;
+int bnum = ra.Next(2, 10);
+int cnum = ra.Next(3, 11);
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
