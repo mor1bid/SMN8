@@ -68,11 +68,10 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
             min = ray[i];
             count++;
         }
-        //Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
 }
-count--;
+//count--;
 Console.WriteLine("Строка с наименьшим значением " + min + " находится на " + count + " месте.");
 }
 
