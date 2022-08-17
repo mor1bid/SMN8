@@ -28,14 +28,14 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         { 
             tmp = min;
             min = ray[i];
-            Console.Write(ray[i] + "");
+            Console.Write(ray[i] + " ");
             ray[i] = tmp;
         }
         if (ray[i]>=max)
         {
             tmp = max;
             max = ray[i];
-            Console.WriteLine(ray[i] + "\t");
+            Console.Write(ray[i] + "\t");
         }
         //Console.Write(ray[i] + "\t");
     }
