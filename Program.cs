@@ -5,8 +5,8 @@ int bnum = ra.Next(3, 12);
 int cnum = ra.Next(3, 12);
 int si = bnum*cnum;
 int [] ray = new int[si];
-int [,] table = new int[bnum, cnum];
-for (int i = 0, j = 0, bar = 0; bar<bnum; bar++) 
+int [,] tab = new int[bnum, cnum];
+for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
     {
@@ -25,17 +25,17 @@ Console.WriteLine();
      int tmp = 0;
      for (int col = 0; col<cnum; i++, col++)
      {
-        if (ray[col]<=min) 
+        if (tab[bar, col]<=min) 
         { 
             //tmp = min;
-            min = ray[col];
+            min = tab[bar, col];
             //ray[i] = tmp;
         }
-        else if (ray[col]>=max)
+        else if (tab[bar, col]>=max)
         {
             tmp = max;
-            max = ray[col];
-            ray[col] = tmp;
+            max = tab[bar, col];
+            tab[bar, col] = tmp;
         }
         // if (bar==bnum-1) { Console.Write(tmp + "\t"); }
          // if (ray[i]>=max)
@@ -48,9 +48,9 @@ Console.WriteLine();
      }
      for (int i2 = 0, col = 0; col<cnum; i2++, col++)
      {
-        if (ray[col]<=max && ray[col]<=tmp) 
+        if (tab[bar, col]<=max && tab[bar, col]<=tmp) 
         {
-        Console.Write(ray[col] + "\t");
+        Console.Write(tab[bar, col] + "\t");
         }
      }
      Console.WriteLine("");
