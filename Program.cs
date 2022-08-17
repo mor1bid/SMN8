@@ -110,18 +110,17 @@ for (int i = 0, bar = 0; bar<bnum;)
             while(bar<=bnum)
             {
                 bar++;
-                Console.WriteLine(" ");
                 Console.Write(ray[i] + " ");
                 i++;
             }
         }
+        Console.WriteLine(" ");
         if (bar==bnum) 
         {
             i = 0;
             while(col<=0)
             {
                 bar++;
-                Console.WriteLine(" ");
                 Console.Write(ray[i] + " ");
                 i++;
             }
