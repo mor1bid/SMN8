@@ -41,8 +41,8 @@ Console.WriteLine("");
 void DZ2() 
 {
 Random ra = new Random();
-int bnum = ra.Next(2, 6);
-int cnum = ra.Next(7, 11);
+int bnum = ra.Next(2, 16);
+int cnum = ra.Next(7, 21);
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
@@ -62,10 +62,11 @@ for (int i = 0, bar = 1; bar<bnum; bar++)
         if (col == cnum-1) Console.WriteLine("--> " + sum);
     }
     Console.WriteLine("");
-    if (bar == 1) { mins = sum; co++; }
-    else if (bar>1 && sum<mins) { mins = sum; co++; }
+    if (bar == 1) { mins = sum; comin = co++; }
+    else if (bar>1 && sum<=mins) { mins = sum; comin = co++; }
+    co++;
 }
-Console.WriteLine("Строка с наименьшим значением суммы " + mins + " находится на " + co + " месте.");
+Console.WriteLine("Строка с наименьшим значением суммы " + mins + " находится на " + comin + " месте.");
 Console.WriteLine();
 }
 
