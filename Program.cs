@@ -50,10 +50,9 @@ Console.WriteLine();
 //         //     Console.Write(ray[i] + "\t");
 //         //     ray[i] = tmp2;
 //         // }
-//     }
-//     Console.WriteLine("");
-//     j += cnum;
-}
+     }
+     Console.WriteLine("");
+     j += cnum;
 }
 }
 Console.WriteLine("");
