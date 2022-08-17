@@ -28,11 +28,8 @@ Console.WriteLine();
         if (ray[i]<=min) 
         {
             tmp = ray [i];
-            ray [i] = ray [min];
-            ray [min] = tmp;
-            // tmp = ray [i];
-            // ray [i] = ray [min];
-            // ray [min] = tmp;
+            ray [i] = min;
+            min = tmp;
             Console.Write(ray[i] + "\t");
         }
         // else if (ray[i]>=max)
