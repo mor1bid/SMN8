@@ -49,8 +49,8 @@ Console.WriteLine();
     //     Console.Write(ray[i2] + "\t");
     //     }
     //  }
-    //  Console.WriteLine("");
-    //  j += cnum;
+    Console.WriteLine("");
+    j += cnum;
 }
 }
 Console.WriteLine("");
