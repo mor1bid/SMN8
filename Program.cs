@@ -47,7 +47,7 @@ Console.WriteLine();
      {
         if (ray[i]>=min) 
         { 
-        Console.WriteLine(ray[i] + "\t");
+        Console.Write(ray[i] + "\t");
         }
      }
      Console.WriteLine("");
