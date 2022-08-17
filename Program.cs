@@ -59,9 +59,9 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 }
 Console.WriteLine();
 int min = ray[0];
-for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
+for (int i = 0, j = 0, bar = 1; bar<bnum; bar++)
 {
-    for (int col = 0; col<cnum; i++, col++)
+    for (int col = 1; col<cnum; i++, col++)
     {
         if (ray[i]<min) 
         { 
