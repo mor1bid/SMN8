@@ -46,7 +46,9 @@ int cnum = 3;
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
-int count = 0;
+int co = 0;
+int comin = co;
+int sum = 0;
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; i++, col++)
@@ -58,21 +60,27 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-int min = ray[0];
-for (int i = 0, j = 0, bar = 1; bar<bnum; bar++)
+//int min = ray[0];
+for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
 {
+    co++;
+    tmp = sum;
+    int mins = tmp;
+    sum = 0;
     for (int col = 1; col<cnum; i++, col++)
     {
-        if (ray[i]<min) 
-        { 
-            min = ray[i];
-            count++;
-        }
+        sum += ray[i];
     }
+    if (bar==1) mins = sum;
+    if (sum<mins && bar>1) 
+    { 
+        mins = sum;
+        comin = co+1;
+    }
+    Console.Write(sum + "\t");
     Console.WriteLine("");
+    if(bar==bnum) Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
 }
-//count--;
-Console.WriteLine("Строка с наименьшим значением " + min + " находится на " + count + " месте.");
 }
 
 //DZ1();
