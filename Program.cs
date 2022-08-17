@@ -62,9 +62,8 @@ for (int i = 0, bar = 1; bar<bnum; bar++)
         if (col == cnum-1) Console.WriteLine("--> " + sum);
     }
     Console.WriteLine("");
-    if (bar == 1) { mins = sum; comin++; }
-    else if (bar>1 && sum<mins) { mins = sum; comin++; }
-    //co++;
+    if (bar == 1) { mins = sum; co++; }
+    else if (bar>1 && sum<mins) { mins = sum; co++; }
 }
 Console.WriteLine("Строка с наименьшим значением суммы " + mins + " находится на " + co + " месте.");
 Console.WriteLine();
