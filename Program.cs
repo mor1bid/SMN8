@@ -62,7 +62,7 @@ for (int i = 0, bar = 1; bar<bnum; bar++)
         if (col == cnum-1) Console.WriteLine("--> " + sum);
     }
     Console.WriteLine("");
-    if (bar == 1) { mins = sum; comin = co + 1; }
+    if (bar == 1) { mins = sum; comin = co; }
     else if (bar>1 && sum<mins) { mins = sum; comin = co + 1; }
     co++;
 }
