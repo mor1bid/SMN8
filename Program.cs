@@ -45,7 +45,7 @@ Console.WriteLine();
      }
      for (int col = 0; col<cnum; i++, col++)
      {
-        if (ray[i]>=min) 
+        if (ray[i]>=min && ray[i]<=tmp) 
         { 
         Console.Write(ray[i] + "\t");
         }
