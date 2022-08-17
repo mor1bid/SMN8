@@ -96,27 +96,30 @@ for (int i = 0, bar = 0; bar<bnum;)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        Console.Write(ray[i] + "\t");
-        if (col==cnum-1) 
-        {
-            i = 0;
-            while(bar<=bnum)
-            {
-                bar++;
-                Console.Write(ray[i] + "\t");
-                i++;
-            }
-        }
-        if (bar==bnum) 
-        {
-            i = 0;
-            while(col<=0)
-            {
-                bar++;
-                Console.Write(ray[i] + "\t");
-                i++;
-            }
-        }
+        if (bar==0) 
+        { Console.Write(ray[i] + "\t"); }
+        if (bar>0 && ray[i]>=12 || col == cnum-1 && ray[i]==5) 
+        { Console.Write(ray[i] + "\t"); }
+        // if (col==cnum-1) 
+        // {
+        //     i = 0;
+        //     while(bar<=bnum)
+        //     {
+        //         bar++;
+        //         Console.Write(ray[i] + "\t");
+        //         i++;
+        //     }
+        // }
+        // if (bar==bnum) 
+        // {
+        //     i = 0;
+        //     while(col<=0)
+        //     {
+        //         bar++;
+        //         Console.Write(ray[i] + "\t");
+        //         i++;
+        //     }
+        // }
     }
     Console.WriteLine("");
 }
