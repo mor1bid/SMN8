@@ -31,8 +31,8 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         { 
             tmp = min;
             min = ray[i];
-            Console.Write(ray[i] + "\t");
             ray[i] = tmp;
+            Console.Write(ray[i] + "\t");
         }
     }
     Console.WriteLine("");
