@@ -28,17 +28,17 @@ Console.WriteLine();
      int tmp = 0;
      for (int col = 0; col<cnum; i++, col++)
      {
-        if (ray[i]<=min) 
+        if (ray[col]<=min) 
         { 
             //tmp = min;
-            min = ray[i];
+            min = ray[col];
             //ray[i] = tmp;
         }
-        else if (ray[i]>=max)
+        else if (ray[col]>=max)
         {
             tmp = max;
-            max = ray[i];
-            ray[i] = tmp;
+            max = ray[col];
+            ray[col] = tmp;
         }
         // if (bar==bnum-1) { Console.Write(tmp + "\t"); }
          // if (ray[i]>=max)
@@ -51,7 +51,7 @@ Console.WriteLine();
      }
      for (int i2 = 0, col = 0; col<cnum; i2++, col++)
      {
-        if (ray[col]>=tmp) 
+        if (ray[col]>=min) 
         { 
         Console.Write(ray[col] + "\t");
         }
