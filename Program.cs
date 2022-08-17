@@ -116,6 +116,7 @@ for (int i = 0, bar = 0; bar<bnum;)
     }
     Console.WriteLine("");
 }
+}
 Console.WriteLine();
 // for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
 // {
