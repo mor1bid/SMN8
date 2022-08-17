@@ -27,16 +27,16 @@ Console.WriteLine();
      {
         if (ray[i]<=min) 
         {
-            tmp = ray [min];
-            ray [min] = min;
-            min = tmp;
+            tmp = min;
+            ray[i] = min;
+            ray[i] = tmp;
             //Console.Write(ray[i] + "\t");
         }
         else if (ray[i]>=max)
         {
-            tmp2 = ray[max];
-            ray [max] = max;
-            max = tmp2;
+            tmp2 = max;
+            ray [i] = max;
+            ray [i] = tmp2;
         }
      }
     for (int i2 = 0, col = 0; col<cnum; i2++, col++)
