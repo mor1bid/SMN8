@@ -21,40 +21,36 @@ Console.WriteLine();
  {
      int max = ray[j];
      // int tmp2 = 0;
-     int min = ray[j];
+     int min = i;
      int tmp = 0;
      for (int col = 0; col<cnum; i++, col++)
      {
         if (ray[i]<=min) 
         { 
-            //tmp = min;
-            min = ray[i];
-            //ray[i] = tmp;
+            tmp = ray [i];
+            ray [i] = ray [min];
+            ray [min] = tmp;
+            tmp = ray [i];
+            ray [i] = ray [min];
+            ray [min] = tmp;
+            Console.Write(ray[i] + "\t");
         }
-        else if (ray[i]>=max)
-        {
-            tmp = max;
-            max = ray[i];
-            ray[i] = tmp;
-        }
-        // if (bar==bnum-1) { Console.Write(tmp + "\t"); }
-         // if (ray[i]>=max)
-         // {
-         //     tmp2 = max;
-         //     max = ray[i];
-         //     Console.Write(ray[i] + "\t");
-         //     ray[i] = tmp2;
-         // }
+        // else if (ray[i]>=max)
+        // {
+        //     tmp = max;
+        //     max = ray[i];
+        //     ray[i] = tmp;
+        // }
      }
-     for (int i2 = 0, col = 0; col<cnum; i2++, col++)
-     {
-        if (ray[i2]==max || ray[i2] > tmp || ray[i2]>=min) 
-        {
-        Console.Write(ray[i2] + "\t");
-        }
-     }
-     Console.WriteLine("");
-     j += cnum;
+    //  for (int i2 = 0, col = 0; col<cnum; i2++, col++)
+    //  {
+    //     if (ray[i2]==max || ray[i2] > tmp || ray[i2]>=min) 
+    //     {
+    //     Console.Write(ray[i2] + "\t");
+    //     }
+    //  }
+    //  Console.WriteLine("");
+    //  j += cnum;
 }
 }
 Console.WriteLine("");
