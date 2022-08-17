@@ -84,6 +84,49 @@ Console.WriteLine("Строка с наименьшим значением су�
 Console.WriteLine();
 }
 
-DZ1();
+void DZ3() 
+{
+Random ra = new Random();
+int bnum = 4;
+int cnum = 4;
+int si = bnum*cnum;
+int [] ray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+int [,] tab = new int[bnum, cnum];
+for (int i = 0, bar = 0; bar<bnum;) 
+{
+    for (int col = 0; col<cnum; i++, col++)
+    {
+        Console.Write(ray[i] + "\t");
+        if (col==cnum-1) 
+        { 
+            while(bar<=bnum)
+            {
+                bar++;
+                Console.Write(ray[i] + "\t");
+            }
+        }
+        if (bar==bnum) 
+        { 
+            while(col<=0)
+            {
+                bar++;
+                Console.Write(ray[i] + "\t");
+            }
+        }
+    }
+    Console.WriteLine("");
+}
+Console.WriteLine();
+// for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
+// {
+
+//      for (int col = 0; col<cnum; i++, col++)
+//      {
+
+//      }
+// }
+// }
+
+//DZ1();
 //DZ2();
-//DZ3();
+DZ3();
