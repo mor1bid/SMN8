@@ -35,7 +35,7 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         {
             tmp = max;
             max = ray[i];
-            Console.Write(ray[i] + "\t");
+            Console.Write(ray[i] + " " + "\t");
         }
         //Console.Write(ray[i] + "\t");
     }
