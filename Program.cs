@@ -50,7 +50,7 @@ int co = 0;
 int comin = co;
 int sum = 0;
 int mins = sum;
-for (int i = 0, bar = 0; bar<bnum; bar++) 
+for (int i = 0, bar = 1; bar<bnum; bar++) 
 {
     sum = 0;
     for (int col = 0; col<cnum; i++, col++)
@@ -65,28 +65,8 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     if (bar == 1) { mins = sum; co++; }
     else if (bar>1 && sum<mins) { mins = sum; co++; }
 }
-Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + co + " месте.");
+Console.WriteLine("Строка с наименьшим значением суммы " + mins + " находится на " + co + " месте.");
 Console.WriteLine();
-//int min = ray[0];
-// for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
-// {
-//     co++;
-//     tmp = sum;
-//     int mins = tmp;
-//     sum = 0;
-//     for (int col = 1; col<cnum; i++, col++)
-//     {
-//         sum += ray[i];
-//         if (col == cnum-1) Console.WriteLine("--> " + sum);
-//     }
-//     if (bar==1) mins = sum;
-//     if (sum<mins && bar>1) 
-//     { 
-//         mins = sum;
-//         comin = co+1;
-//     }
-//     if(bar==bnum-1) Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
-// }
 }
 
 //DZ1();
