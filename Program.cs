@@ -60,10 +60,10 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         Console.Write(ray[i] + "\t");
         sum += ray[i];
         if (col == cnum-1) Console.WriteLine("--> " + sum);
-        if (bar == 1) { mins = sum; co++; }
-        else if (bar>1 && sum<mins) { mins = sum; }
     }
     Console.WriteLine("");
+    if (bar == 1) { mins = sum; co++; }
+    else if (bar>1 && sum<mins) { mins = sum; co++; }
 }
 Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + co + " месте.");
 Console.WriteLine();
