@@ -97,7 +97,7 @@ for (int i = 0, bar = 0; bar<bnum;)
 {
     for (int col = 0; col<cnum; i++, col++)
     {
-        Console.WriteLine(ray[i] + "\t");
+        Console.Write(ray[i] + "\t");
 
         // if (bar==0) 
         // { Console.Write(ray[i] + "\t"); }
