@@ -56,31 +56,32 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         int num = ra.Next(3, 12);
         ray[i] = num;
         Console.Write(ray[i] + "\t");
+        sum += ray[i];
+        if (col == cnum-1) Console.WriteLine("--> " + sum);
     }
     Console.WriteLine("");
 }
 Console.WriteLine();
 //int min = ray[0];
-for (int i = 0, tmp = 0, bar = 1; bar<=bnum; bar++)
-{
-    co++;
-    tmp = sum;
-    int mins = tmp;
-    sum = 0;
-    for (int col = 1; col<cnum; i++, col++)
-    {
-        sum += ray[i];
-    }
-    if (bar==1) mins = sum;
-    if (sum<mins && bar>1) 
-    { 
-        mins = sum;
-        comin = co+1;
-    }
-    Console.Write(sum + "\t");
-    Console.Write("");
-    if(bar==bnum) Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
-}
+// for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
+// {
+//     co++;
+//     tmp = sum;
+//     int mins = tmp;
+//     sum = 0;
+//     for (int col = 1; col<cnum; i++, col++)
+//     {
+//         sum += ray[i];
+//         if (col == cnum-1) Console.WriteLine("--> " + sum);
+//     }
+//     if (bar==1) mins = sum;
+//     if (sum<mins && bar>1) 
+//     { 
+//         mins = sum;
+//         comin = co+1;
+//     }
+//     if(bar==bnum-1) Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
+// }
 }
 
 //DZ1();
