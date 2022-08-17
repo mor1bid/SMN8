@@ -27,11 +27,11 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
     int tmp = 0;
     for (int col = 0; col<cnum; i++, col++)
     {
-        if (ray[i]<min) 
+        if (ray[i]>min) 
         { 
             tmp = min;
             min = ray[i];
-            //ray[i] = tmp;
+            ray[i] = tmp;
         }
         Console.Write(ray[i] + "\t");
     }
