@@ -21,18 +21,18 @@ Console.WriteLine();
  {
      int max = ray[j];
      // int tmp2 = 0;
-     int min = i;
+     int min = ray[j];
      int tmp = 0;
      for (int col = 0; col<cnum; i++, col++)
      {
         if (ray[i]<=min) 
-        { 
+        {
             tmp = ray [i];
             ray [i] = ray [min];
             ray [min] = tmp;
-            tmp = ray [i];
-            ray [i] = ray [min];
-            ray [min] = tmp;
+            // tmp = ray [i];
+            // ray [i] = ray [min];
+            // ray [min] = tmp;
             Console.Write(ray[i] + "\t");
         }
         // else if (ray[i]>=max)
