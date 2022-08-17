@@ -41,9 +41,9 @@ Console.WriteLine();
      }
     for (int i2 = 0, col = 0; col<cnum; i2++, col++)
     {
-        if (ray[col] <= tmp2 && ray[col]<=max) 
+        if (ray[i2] < tmp2 && ray[i2]<=max) 
         {
-            Console.Write(ray[col] + "\t");
+            Console.Write(ray[i2] + "\t");
         }
     }
     Console.WriteLine("");
