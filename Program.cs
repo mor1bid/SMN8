@@ -41,8 +41,8 @@ Console.WriteLine("");
 void DZ2() 
 {
 Random ra = new Random();
-int bnum = 6;
-int cnum = 3;
+int bnum = 3;
+int cnum = 6;
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] table = new int[bnum, cnum];
@@ -51,6 +51,7 @@ int comin = co;
 int sum = 0;
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
+    sum = 0;
     for (int col = 0; col<cnum; i++, col++)
     {
         int num = ra.Next(3, 12);
