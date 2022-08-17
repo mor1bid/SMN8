@@ -49,6 +49,7 @@ int [,] table = new int[bnum, cnum];
 int co = 0;
 int comin = co;
 int sum = 0;
+int mins = sum;
 for (int i = 0, bar = 0; bar<bnum; bar++) 
 {
     sum = 0;
@@ -58,10 +59,14 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         ray[i] = num;
         Console.Write(ray[i] + "\t");
         sum += ray[i];
+        co++;
         if (col == cnum-1) Console.WriteLine("--> " + sum);
+        if (bnum == 1 || bnum>1 && sum<mins) mins = sum; comin++;
+        //else if (bnum>1 && sum<mins) mins = sum;
     }
     Console.WriteLine("");
 }
+Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
 Console.WriteLine();
 //int min = ray[0];
 // for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
