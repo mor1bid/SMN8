@@ -27,10 +27,10 @@ Console.WriteLine();
      {
         if (ray[i]<=min) 
         {
-            tmp = ray [i];
-            ray [i] = min;
+            tmp = ray [min];
+            ray [min] = min;
             min = tmp;
-            Console.Write(ray[i] + "\t");
+            //Console.Write(ray[i] + "\t");
         }
         // else if (ray[i]>=max)
         // {
@@ -39,13 +39,13 @@ Console.WriteLine();
         //     ray[i] = tmp;
         // }
      }
-    //  for (int i2 = 0, col = 0; col<cnum; i2++, col++)
-    //  {
-    //     if (ray[i2]==max || ray[i2] > tmp || ray[i2]>=min) 
-    //     {
-    //     Console.Write(ray[i2] + "\t");
-    //     }
-    //  }
+    for (int i2 = 0, col = 0; col<cnum; i2++, col++)
+    {
+        if (ray[i2] > tmp || ray[i2]>=min) 
+        {
+            Console.Write(ray[i2] + "\t");
+        }
+    }
     Console.WriteLine("");
     j += cnum;
 }
