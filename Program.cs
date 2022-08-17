@@ -27,8 +27,8 @@ for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
         { 
             tmp = min;
             min = ray[i];
+            Console.Write(tmp + "\t");
             ray[i] = tmp;
-            Console.Write(min + "\t");
         }
         //Console.Write(ray[i] + "\t");
     }
