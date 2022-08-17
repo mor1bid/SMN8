@@ -39,7 +39,7 @@ Console.WriteLine();
         { 
             tmp = min;
             min = ray[i];
-            Console.Write(ray[i] + " ");
+            Console.Write(ray[i] + "\t");
             ray[i] = tmp;
         }
         if (bar==bnum-1) { Console.Write(tmp + "\t"); }
