@@ -61,7 +61,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 }
 Console.WriteLine();
 //int min = ray[0];
-for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
+for (int i = 0, tmp = 0, bar = 1; bar<=bnum; bar++)
 {
     co++;
     tmp = sum;
@@ -78,7 +78,7 @@ for (int i = 0, tmp = 0, bar = 1; bar<bnum; bar++)
         comin = co+1;
     }
     Console.Write(sum + "\t");
-    Console.WriteLine("");
+    Console.Write("");
     if(bar==bnum) Console.WriteLine("Строка с наименьшим значением суммы" + mins + " находится на " + comin + " месте.");
 }
 }
