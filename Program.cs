@@ -1,8 +1,8 @@
 ﻿void DZ1() 
 {
 Random ra = new Random();
-int bnum = ra.Next(3, 12);
-int cnum = ra.Next(3, 12);
+int bnum = ra.Next(3, 6);
+int cnum = ra.Next(3, 6);
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] tab = new int[bnum, cnum];
@@ -48,7 +48,7 @@ Console.WriteLine();
      }
      for (int i2 = 0, col = 0; col<cnum; i2++, col++)
      {
-        if (ray[i2]==max && ray[i2] > tmp && ray[i2]>=min) 
+        if (ray[i2]==max || ray[i2] > tmp || ray[i2]>=min) 
         {
         Console.Write(ray[i2] + "\t");
         }
