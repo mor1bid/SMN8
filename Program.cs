@@ -49,7 +49,7 @@ Console.WriteLine();
      }
      for (int i2 = 0, col = 0; col<cnum; i2++, col++)
      {
-        if (col == cnum-1 && ray[i2]>=min) 
+        if (col == cnum-1 && ray[i2]<=max) 
         { 
         Console.Write(ray[i2] + "\t");
         }
