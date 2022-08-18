@@ -128,7 +128,7 @@ for (int bar = 0; bar<bnum; bar++)
             Console.Write(ray[i] + " ");
             if (col==cnum-1) {Console.Write(ray[cnum]);}
         }
-        Console.Write(ray[i] + " ");
+        if (bar==0) {Console.Write(ray[i] + " ");}
 }
 }
 }
