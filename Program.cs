@@ -17,38 +17,26 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
- for (int i = 0, j = 0, bar = 0; bar<bnum; bar++)
+ for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
  {
-     int max = ray[j];
-     int tmp2 = 0;
-     int min = ray[j];
-     int tmp = 0;
-     for (int col = 0; col<cnum; i++, col++)
+     for (int j = 0, col = 0; col<cnum-1; col++, j++)
      {
-        if (ray[i]<=min) 
+        if (ray[col]> ray[col+1])
         {
-            tmp = min;
-            ray[i] = min;
-            ray[i] = tmp;
-            //Console.Write(ray[i] + "\t");
-        }
-        else if (ray[i]>=max)
-        {
-            tmp2 = max;
-            ray [i] = max;
-            ray [i] = tmp2;
+            int tmp = ray[col];
+            ray[col] = ray[col+1];
+            ray[col+1] = tmp;
         }
      }
-    for (int i2 = 0, col = 0; col<cnum; i2++, col++)
+ }
+ for (int bar = 0; bar<bnum; bar++)
+ {
+    for (int col = 0; col<cnum; col++)
     {
-        if (ray[i2]<=min && ray[i2] <=max) 
-        {
-            Console.Write(ray[i2] + "\t");
-        }
+        Console.WriteLine(ray[col]);
     }
+ }
     Console.WriteLine("");
-    j += cnum;
-}
 }
 Console.WriteLine("");
 
@@ -131,6 +119,6 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 }
 Console.WriteLine();
 
-//DZ1();
+DZ1();
 //DZ2();
-DZ3();
+//DZ3();
