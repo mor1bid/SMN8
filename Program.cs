@@ -79,7 +79,7 @@ Console.WriteLine();
 void DZ3() 
 {
 Random ra = new Random();
-int i = 1;
+int i = 0;
 int bnum = 4;
 int cnum = 4;
 int si = bnum*cnum;
@@ -121,7 +121,7 @@ for (int bar = 0; bar<bnum; bar++)
     {
         num1+=j;
         ray[i] = num1;
-        while (bar==0) 
+        while (bar==0 && i>0) 
         {Console.Write(ray[col] + " "); bar++;}
         if (ray[i]==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
         {
