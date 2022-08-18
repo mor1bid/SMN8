@@ -9,9 +9,9 @@ int cnum = ra.Next(3, 6);
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] tab = new int[bnum, cnum];
-for (int i = 0, bar = 0; bar<bnum; bar++) 
+for (int bar = 0; bar<bnum; bar++) 
 {
-    for (int col = 0; col<cnum; i++, col++)
+    for (int col = 0; col<cnum; col++)
     {
         int num = ra.Next(3, 12);
         ray[col] = num;
@@ -20,10 +20,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-int bord = bnum;
-for(int j = 0; j<si; j++, bord--) 
-{
-for (int i = 0, bar = bnum; bar>0; bar--)
+for (int bar = 0; bar<bnum-1; bar++)
 {
     for (int col = 0; col<cnum-1; col++)
     {
@@ -36,14 +33,13 @@ for (int i = 0, bar = bnum; bar>0; bar--)
         }
 }
 }
-for (int i = 0, bar = 0; bar<bnum; bar++)
+for (int bar = 0; bar<bnum; bar++)
 {
-    for (int col = 0; col<cnum; col++, i++)
+    for (int col = 0; col<cnum; col++)
     {
         Console.Write(ray[col] + "\t");
     }
         Console.WriteLine("");
-}
 }
 Console.WriteLine();
 }
