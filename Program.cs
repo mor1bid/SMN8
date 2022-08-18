@@ -37,7 +37,7 @@ for (int bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; col++)
     {
-        Console.Write(ray[col] + "\t");
+        Console.Write(tab[bar,col] + "\t");
     }
         Console.WriteLine("");
 }
