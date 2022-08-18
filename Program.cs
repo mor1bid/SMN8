@@ -124,16 +124,16 @@ for (int bar = 0; bar<bnum; bar++)
             ray[i] = num1;
             Console.Write(ray[i] + " ");
         }
-        num1+=j;
-        if (bar==1 && num1>=12)
-        {
-            Console.WriteLine("");
-            Console.Write(ray[i] + " ");
-            if (col==cnum-1) 
+        if (bar==1) { num1+=j; }
+            if (num1>=12) 
             {
-                Console.Write($"{ray[cnum-1]}" + " ");
+                Console.WriteLine("");
+                Console.Write(ray[i] + " ");
+                if (col==cnum-1) 
+                {
+                    Console.Write($"{ray[cnum-1]}" + " ");
+                }
             }
-        }
         if (bar==2)
         {
             Console.WriteLine("");
