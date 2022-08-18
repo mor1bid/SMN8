@@ -79,22 +79,59 @@ Console.WriteLine();
 void DZ3() 
 {
 Random ra = new Random();
+int i = 0;
 int bnum = 4;
 int cnum = 4;
 int si = bnum*cnum;
-int [] ray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+int[] ray = new int [si];
+///int [] ray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
 //int [] ray = {1, 2, 3, 4, 12, 13, 14, 5, 11, 16, 15, 6, 10, 9, 8, 7};
 int [,] tab = new int[bnum, cnum];
-for (int i = 0, bar = 0; bar<bnum; bar++) 
+int num1=0;
+int j1=ray[9];
+for (int bar = 0; bar<bnum; bar++) 
 {
-    for (int col = 0; col<cnum; i++, col++)
+    for (int j = 1, col = 0; col<cnum; i++, col++)
     {
+        if (bar==0)
+        {
+            num1+=j;
+            ray[i] = num1;
+            Console.Write(ray[i] + " ");
+            //int tmp = ray[i];
+        }
+        if (bar==1 && num1>=ray[11])
+        Console.WriteLine(); 
+        {
+            Console.Write(ray[i] + " ");
+            if (col==cnum-1) 
+            {
+                Console.Write($"{ray[cnum-1]}" + " ");
+            }
+        }
+        if (bar==2)
+        Console.WriteLine();
+        {
+            Console.Write($"{ray[11]-1}" + " ");
+            Console.Write($"{ray[12]+3}" + " ");
+            if (col==cnum-1) 
+            {
+                Console.Write($"{ray[cnum-1]+cnum}" + " ");
+            }
+        }
+        if (bar==3)
+        Console.WriteLine();
+        {
+            Console.Write(ray[j1] + " ");
+            j1--;
+        }
+        
         //Console.Write(ray[i] + "\t");
 
-        if (bar==0) 
-        { Console.Write(ray[i] + " "); Console.WriteLine(""); }
-        if (bar>0 && ray[i]>=12 || col == cnum-1 && ray[i]==5) 
-        { Console.Write(ray[i] + " "); Console.WriteLine(""); }
+        // if (bar==0) 
+        // { Console.Write(ray[i] + " "); Console.WriteLine(""); }
+        // if (bar>0 && ray[i]>=ray[11] || col == cnum-1 && ray[i]==ray[4]) 
+        // { Console.Write(ray[i] + " "); Console.WriteLine(""); }
 
     //     if (col==cnum-1) 
     //     {
@@ -123,6 +160,6 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 }
 Console.WriteLine();
 
-DZ1();
+//DZ1();
 //DZ2();
-//DZ3();
+DZ3();
