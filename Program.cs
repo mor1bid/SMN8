@@ -9,6 +9,9 @@ int cnum = ra.Next(3, 6);
 int si = bnum*cnum;
 int [] ray = new int[si];
 int [,] tab = new int[bnum, cnum];
+FRay(ray);
+void FRay(int [] ray) 
+{
 for (int bar = 0; bar<bnum; bar++) 
 {
     for (int col = 0; col<cnum; col++)
@@ -20,15 +23,16 @@ for (int bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
+}
 for (int bar = 0; bar<bnum-1; bar++)
 {
     for (int col = 0; col<cnum-1; col++)
     {
         if (ray[col]< ray[col+1])
         {
-            int tmp = ray[col];
-            ray[col] = ray[col+1];
-            ray[col+1] = tmp;
+            int tmp = tab[bar,col];
+            tab[bar,col] = tab[bar,col+1];
+            tab[bar,col+1] = tmp;
             //Console.Write(ray[i] + "\t");
         }
 }
