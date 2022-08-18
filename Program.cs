@@ -122,7 +122,7 @@ for (int bar = 0; bar<bnum; bar++)
         num1+=j;
         ray[i] = num1;
         while (bar==0 && i>0) 
-        {Console.Write(ray[col] + " "); bar++;}
+        {Console.Write(ray[i] + " "); bar++;}
         if (ray[i]==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
         {
             //Console.WriteLine("");
