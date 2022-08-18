@@ -13,8 +13,9 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         int num = ra.Next(3, 12);
         ray[i] = num;
         Console.Write(ray[i] + "\t");
+        Console.WriteLine("");
     }
-    Console.WriteLine("");
+   //Console.WriteLine("");
 }
 Console.WriteLine();
 for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
