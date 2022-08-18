@@ -11,8 +11,8 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     for (int col = 0; col<cnum; i++, col++)
     {
         int num = ra.Next(3, 12);
-        ray[i] = num;
-        Console.Write(ray[i] + "\t");
+        ray[col] = num;
+        Console.Write(ray[col] + "\t");
     }
     Console.WriteLine("");
 }
@@ -21,11 +21,11 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++)
 {
     for (int col = 0; col<cnum-1; col++, i++)
     {
-        if (ray[i]< ray[i+1])
+        if (ray[col]< ray[col+1])
         {
-            int tmp = ray[i];
-            ray[i] = ray[i+1];
-            ray[i+1] = tmp;
+            int tmp = ray[col];
+            ray[col] = ray[col+1];
+            ray[col+1] = tmp;
         }
     }
     //for (int j = 0, col = 0; col<cnum; col++, j++)
@@ -39,7 +39,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; col++, i++)
     {
-        Console.Write(ray[i] + "\t");
+        Console.Write(ray[col] + "\t");
     }
         Console.WriteLine("");
 }
