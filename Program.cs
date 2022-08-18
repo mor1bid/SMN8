@@ -120,15 +120,14 @@ for (int bar = 0; bar<bnum; bar++)
     for (int j = 1, col = 0; col<cnum; i++, col++) 
     {
         num1+=j;
-        ray[i] = num1;
+        ray[col] = num1;
         while (bar==0) 
-        {Console.Write(ray[i] + " "); bar++;}
-        if (ray[i]==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
+        {Console.Write(ray[col] + " "); bar++;}
+        if (ray[col]==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
         {
             //Console.WriteLine("");
-            ray[i] = num1;
-            Console.Write(ray[i] + " ");
-            i++;
+            ray[col] = num1;
+            Console.Write(ray[col] + " ");
             if (col==cnum-1) {Console.Write(ray[cnum]);}
         }
 }
