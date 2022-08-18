@@ -25,8 +25,8 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++)
         {
             int tmp = ray[col];
             ray[col] = ray[col+1];
-            ray[col+1] = tmp;
             Console.Write(ray[i] + "\t");
+            ray[col+1] = tmp;
         }
     //for (int j = 0, col = 0; col<cnum; col++, j++)
     //{
