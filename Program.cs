@@ -35,9 +35,9 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++)
     //Console.WriteLine("");
     //j += cnum;
 }
-for (int i = 0, bar = 0; bar<bnum-1; bar++)
+for (int i = 0, bar = 0; bar<bnum+1; bar++)
 {
-    for (int col = 0; col<cnum-1; col++, i++)
+    for (int col = 0; col<cnum+1; col++, i++)
     {
         Console.Write(ray[i] + "\t");
     }
