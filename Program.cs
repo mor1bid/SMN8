@@ -120,8 +120,13 @@ for (int bar = 0; bar<bnum; bar++)
     {
         num1+=j;
         ray[i] = num1;
+        if (num1==ray[cnum]) 
+        {
+            Console.WriteLine("");
+            ray[i] = num1 * ray[i-1];
+            Console.Write(ray[i] + " ");
+        }
         Console.Write(ray[i] + " ");
-        //if (num1>=ray[3]*cnum) {}
 }
 }
 }
