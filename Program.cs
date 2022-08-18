@@ -21,7 +21,7 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
 {
     for (int j = 0, col = 0; col<cnum-1; col++, j++)
     {
-        if (ray[col]> ray[col+1])
+        if (ray[col]< ray[col+1])
         {
             int tmp = ray[col];
             ray[col] = ray[col+1];
