@@ -117,18 +117,20 @@ for (int bar = 0; bar<bnum; bar++)
     //             Console.Write($"{ray[cnum-1]+cnum}" + " ");
     //         }
     //     }
-    for (int j = 1, col = 0; col<cnum; i++, col++) 
+    for (int j = 1, i2 = cnum+j, col = 0; col<cnum; i++, col++) 
     {
         num1+=j;
         ray[i] = num1;
+        while (bar==0) 
+        {Console.Write(ray[i] + " "); bar++;}
         if (num1==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
         {
             //Console.WriteLine("");
-            ray[i+cnum] = num1;
-            Console.Write(ray[i] + " ");
+            ray[i2] = num1;
+            Console.Write(ray[i2] + " ");
+            i2++;
             if (col==cnum-1) {Console.Write(ray[cnum]);}
         }
-        if (bar==0) {Console.Write(ray[i] + " ");}
 }
 Console.WriteLine("");
 }
