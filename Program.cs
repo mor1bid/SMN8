@@ -44,7 +44,7 @@ for (int bar = 0; bar<bnum; bar++)
 {
     for (int col = 0; col<cnum; col++)
     {
-        Console.Write(tab[bar,col] + "\t");
+        Console.Write(ar[col] + "\t");
     }
         Console.WriteLine("");
 }
