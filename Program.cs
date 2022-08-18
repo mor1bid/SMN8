@@ -124,6 +124,7 @@ for (int bar = 0; bar<bnum; bar++)
         //if (num1>=ray[3]*cnum) {}
 }
 }
+}
 Console.WriteLine();
 
 //DZ1();
