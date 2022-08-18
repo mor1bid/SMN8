@@ -24,6 +24,9 @@ for (int bar = 0; bar<bnum; bar++)
 }
 Console.WriteLine();
 }
+SortAr(tab);
+void SortAr(int [,] tab)
+{
 for (int bar = 0; bar<bnum-1; bar++)
 {
     for (int col = 0; col<cnum-1; col++)
@@ -35,7 +38,7 @@ for (int bar = 0; bar<bnum-1; bar++)
             tab[bar,col+1] = tmp;
             //Console.Write(ray[i] + "\t");
         }
-}
+    }
 }
 for (int bar = 0; bar<bnum; bar++)
 {
@@ -46,6 +49,7 @@ for (int bar = 0; bar<bnum; bar++)
         Console.WriteLine("");
 }
 Console.WriteLine();
+}
 }
 
 void DZ2() 
@@ -62,8 +66,8 @@ int co = 0;
 int comin = co;
 int sum = 0;
 int mins = sum;
-BuildRay(ray);
-void BuildRay(int [] ray)
+BuildAr(ray);
+void BuildAr(int [] ray)
 {
 for (int i = 0, bar = 1; bar<bnum; bar++) 
 {
@@ -105,8 +109,8 @@ while (tmp <= bnum*cnum)
     else if (bar >= col && bar + col > cnum - 1) col--;
     else bar--;
 }
-BuildRay(mat);
-void BuildRay (int[,] rix)
+BuildAr(mat);
+void BuildAr (int[,] rix)
 {
   for (int bar = 0; bar < bnum; bar++)
   {
