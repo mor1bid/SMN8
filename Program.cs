@@ -31,13 +31,14 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
     }
      //Console.WriteLine("");
 }
-for (int bar = 0; bar<bnum; bar++)
+for (int j=0, bar = 0; bar<bnum; bar++)
 {
-    for (int col = 0; col<cnum; col++)
+    for (int col = 0; col<cnum; col++, j++)
     {
-        Console.Write(ray[col] + "\t");
+        Console.Write(ray[j] + "\t");
     }
     Console.WriteLine("");
+    j+=cnum;
 }
 }
 
