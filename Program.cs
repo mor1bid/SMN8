@@ -37,8 +37,8 @@ for (int bar = 0; bar<bnum; bar++)
     {
         Console.Write(ray[col] + "\t");
     }
-}
     Console.WriteLine("");
+}
 }
 
 void DZ2() 
