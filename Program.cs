@@ -121,7 +121,9 @@ for (int bar = 0; bar<bnum; bar++)
     {
         num1+=j;
         ray[i] = num1;
-        if (num1==ray[cnum]) {ar[i] = num1;}
+        if (num1==ray[cnum]) 
+        {ar[i] = num1;}
+        else if (num1>=ray[cnum]*cnum)
         {
             //Console.WriteLine("");
             ray[i] = num1;
