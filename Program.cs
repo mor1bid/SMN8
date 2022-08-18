@@ -17,28 +17,28 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
- for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
- {
-     for (int j = 0, col = 0; col<cnum-1; col++, j++)
-     {
+for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
+{
+    for (int j = 0, col = 0; col<cnum-1; col++, j++)
+    {
         if (ray[col]> ray[col+1])
         {
             int tmp = ray[col];
             ray[col] = ray[col+1];
             ray[col+1] = tmp;
-            Console.Write(ray[col] + "\t");
+            //Console.Write(ray[col] + "\t");
         }
-     }
-     Console.WriteLine("");
- }
-//  for (int bar = 0; bar<bnum; bar++)
-//  {
-//     for (int col = 0; col<cnum; col++)
-//     {
-//         Console.Write(ray[col] + "\t");
-//     }
-//  }
-//     Console.WriteLine("");
+    }
+     //Console.WriteLine("");
+}
+for (int bar = 0; bar<bnum; bar++)
+{
+    for (int col = 0; col<cnum; col++)
+    {
+        Console.Write(ray[col] + "\t");
+    }
+}
+    Console.WriteLine("");
 }
 Console.WriteLine("");
 
