@@ -123,13 +123,14 @@ for (int bar = 0; bar<bnum; bar++)
         ray[i] = num1;
         if (num1==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
         {
-            Console.WriteLine("");
+            //Console.WriteLine("");
             ray[i] = num1;
             Console.Write(ray[i] + " ");
             if (col==cnum-1) {Console.Write(ray[cnum]);}
         }
         if (bar==0) {Console.Write(ray[i] + " ");}
 }
+Console.WriteLine("");
 }
 }
 Console.WriteLine();
