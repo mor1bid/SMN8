@@ -45,6 +45,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
         Console.WriteLine("");
 }
 }
+Console.WriteLine();
 }
 
 void DZ2() 
@@ -89,31 +90,32 @@ void DZ3()
 {
 Console.WriteLine("58.");
 Console.WriteLine();
-int num = 4;
-int[,] tab = new int[num, num];
-int temp = 1;
+int bnum = 4;
+int cnum = 4;
+int[,] tab = new int[bnum, cnum];
+int tmp = 1;
 int i = 0;
 int j = 0;
-while (temp <= tab.GetLength(0) * tab.GetLength(1))
+while (tmp <= bnum*cnum)
 {
-    tab[i, j] = temp;
-    temp++;
-    if (i <= j + 1 && i + j < tab.GetLength(1) - 1) j++;
-    else if (i < j && i + j >= tab.GetLength(0) - 1) i++;
-    else if (i >= j && i + j > tab.GetLength(1) - 1) j--;
+    tab[i, j] = tmp;
+    tmp++;
+    if (i <= j + 1 && i + j < cnum - 1) j++;
+    else if (i < j && i + j >= bnum - 1) i++;
+    else if (i >= j && i + j > cnum - 1) j--;
     else i--;
 }
 BuildRay(tab);
 void BuildRay (int[,] ray)
 {
-  for (int i = 0; i < ray.GetLength(0); i++)
+  for (int bar = 0; bar < bnum; bar++)
   {
-    for (int j = 0; j < ray.GetLength(1); j++)
+    for (int col = 0; col < cnum; col++)
     {
-      if (ray[i,j] / 10 <= 0)
-      Console.Write($" {ray[i,j]} ");
+      if (ray[bar,col] / 10 <= 0)
+      Console.Write($" {ray[bar,col]} ");
 
-      else Console.Write($"{ray[i,j]} ");
+      else Console.Write($"{ray[bar,col]} ");
     }
     Console.WriteLine();
   }
@@ -121,6 +123,6 @@ void BuildRay (int[,] ray)
 }
 Console.WriteLine();
 
-DZ1();
+//DZ1();
 DZ2();
 DZ3();
