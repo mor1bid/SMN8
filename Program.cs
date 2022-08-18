@@ -21,11 +21,11 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
 {
     for (int j = 0, col = 0; col<cnum-1; col++, j++)
     {
-        if (ray[col]< ray[col+1])
+        if (ray[j]< ray[j+1])
         {
             int tmp = ray[col];
-            ray[col] = ray[col+1];
-            ray[col+1] = tmp;
+            ray[j] = ray[j+1];
+            ray[j+1] = tmp;
             //Console.Write(ray[col] + "\t");
         }
     }
