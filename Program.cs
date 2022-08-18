@@ -119,12 +119,12 @@ for (int bar = 0; bar<bnum; bar++)
                 Console.Write($"{ray[cnum-1]+cnum}" + " ");
             }
         }
-        if (bar==3)
-        Console.WriteLine();
-        {
-            Console.Write(ray[j1] + " ");
-            j1--;
-        }
+        // if (bar==3)
+        // Console.WriteLine();
+        // {
+        //     Console.Write(ray[j1] + " ");
+        //     j1--;
+        // }
         
         //Console.Write(ray[i] + "\t");
 
