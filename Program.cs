@@ -92,30 +92,30 @@ Console.WriteLine("58.");
 Console.WriteLine();
 int bnum = 4;
 int cnum = 4;
-int[,] tab = new int[bnum, cnum];
+int[,] mat = new int[bnum, cnum];
 int tmp = 1;
-int i = 0;
-int j = 0;
+int bar = 0;
+int col = 0;
 while (tmp <= bnum*cnum)
 {
-    tab[i, j] = tmp;
+    mat[bar, col] = tmp;
     tmp++;
-    if (i <= j + 1 && i + j < cnum - 1) j++;
-    else if (i < j && i + j >= bnum - 1) i++;
-    else if (i >= j && i + j > cnum - 1) j--;
-    else i--;
+    if (bar <= col + 1 && bar + col < cnum - 1) col++;
+    else if (bar < col && bar + col >= bnum - 1) bar++;
+    else if (bar >= col && bar + col > cnum - 1) col--;
+    else bar--;
 }
-BuildRay(tab);
-void BuildRay (int[,] ray)
+BuildRay(mat);
+void BuildRay (int[,] rix)
 {
   for (int bar = 0; bar < bnum; bar++)
   {
     for (int col = 0; col < cnum; col++)
     {
-      if (ray[bar,col] / 10 <= 0)
-      Console.Write($" {ray[bar,col]} ");
+      if (rix[bar,col] / 10 <= 0)
+      Console.Write($" {rix[bar,col]} ");
 
-      else Console.Write($"{ray[bar,col]} ");
+      else Console.Write($"{rix[bar,col]} ");
     }
     Console.WriteLine();
   }
@@ -123,6 +123,6 @@ void BuildRay (int[,] ray)
 }
 Console.WriteLine();
 
-//DZ1();
+DZ1();
 DZ2();
 DZ3();
