@@ -2,6 +2,7 @@
 {
     
 Console.WriteLine("54.");
+Console.WriteLine();
 Random ra = new Random();
 int bnum = ra.Next(3, 6);
 int cnum = ra.Next(3, 6);
@@ -49,6 +50,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 void DZ2() 
 {
 Console.WriteLine("56.");
+Console.WriteLine();
 Random ra = new Random();
 int bnum = ra.Next(2, 11);
 int cnum = ra.Next(7, 18);
@@ -86,6 +88,7 @@ Console.WriteLine();
 void DZ3() 
 {
 Console.WriteLine("58.");
+Console.WriteLine();
 int num = 4;
 int[,] tab = new int[num, num];
 int temp = 1;
@@ -100,8 +103,8 @@ while (temp <= tab.GetLength(0) * tab.GetLength(1))
     else if (i >= j && i + j > tab.GetLength(1) - 1) j--;
     else i--;
 }
-WriteRay(tab);
-void WriteRay (int[,] ray)
+BuildRay(tab);
+void BuildRay (int[,] ray)
 {
   for (int i = 0; i < ray.GetLength(0); i++)
   {
@@ -118,6 +121,6 @@ void WriteRay (int[,] ray)
 }
 Console.WriteLine();
 
-//DZ1();
+DZ1();
 DZ2();
 DZ3();
