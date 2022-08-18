@@ -17,9 +17,9 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
+int j = 0;
 for (int i = 0, bar = 0; bar<bnum-1; bar++)
 {
-    int j = 0;
     for (int col = 0; col<cnum-1; col++, i++)
     {
         if (ray[i]< ray[i+1])
