@@ -38,7 +38,7 @@ for (int j=0, bar = 0; bar<bnum; bar++)
         Console.Write(ray[j] + "\t");
     }
     Console.WriteLine("");
-    j+=cnum;
+    //j+=cnum;
 }
 }
 
