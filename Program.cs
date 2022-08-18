@@ -54,11 +54,14 @@ int bnum = ra.Next(2, 11);
 int cnum = ra.Next(7, 18);
 int si = bnum*cnum;
 int [] ray = new int[si];
-int [,] table = new int[bnum, cnum];
+int [,] tab = new int[bnum, cnum];
 int co = 0;
 int comin = co;
 int sum = 0;
 int mins = sum;
+BuildRay(ray);
+void BuildRay(int [] ray)
+{
 for (int i = 0, bar = 1; bar<bnum; bar++) 
 {
     sum = 0;
@@ -75,14 +78,16 @@ for (int i = 0, bar = 1; bar<bnum; bar++)
     else if (bar>1 && sum<=mins) { mins = sum; comin = co+1; }
     co++;
 }
+}
 Console.WriteLine("Строка с наименьшим значением суммы " + mins + " находится на " + comin + " месте.");
 Console.WriteLine();
 }
 
 void DZ3() 
 {
-int n = 4;
-int[,] tab = new int[n, n];
+Console.WriteLine("58.");
+int num = 4;
+int[,] tab = new int[num, num];
 int temp = 1;
 int i = 0;
 int j = 0;
@@ -95,8 +100,8 @@ while (temp <= tab.GetLength(0) * tab.GetLength(1))
     else if (i >= j && i + j > tab.GetLength(1) - 1) j--;
     else i--;
 }
-WriteArray(tab);
-void WriteArray (int[,] ray)
+WriteRay(tab);
+void WriteRay (int[,] ray)
 {
   for (int i = 0; i < ray.GetLength(0); i++)
   {
@@ -114,5 +119,5 @@ void WriteArray (int[,] ray)
 Console.WriteLine();
 
 //DZ1();
-//DZ2();
+DZ2();
 DZ3();
