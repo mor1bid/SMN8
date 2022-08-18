@@ -30,7 +30,7 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++)
         }
     for (int col2=col; col2>0; col2--, i++)
     {
-        Console.Write(ray[i] + "\t");
+        Console.Write(ray[col2] + "\t");
     }
     }
     Console.WriteLine("");
