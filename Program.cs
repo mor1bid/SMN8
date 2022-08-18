@@ -83,6 +83,7 @@ int i = 0;
 int bnum = 4;
 int cnum = 4;
 int si = bnum*cnum;
+int[] ar = new int [si];
 int[] ray = new int [si];
 //int [] ray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
 //int [] ray = {1, 2, 3, 4, 12, 13, 14, 5, 11, 16, 15, 6, 10, 9, 8, 7};
@@ -120,11 +121,13 @@ for (int bar = 0; bar<bnum; bar++)
     {
         num1+=j;
         ray[i] = num1;
-        if (num1==ray[cnum]) 
+        if (num1==ray[cnum]) {ar[i] = num1;}
+        else if (num1==ray[11])
         {
             Console.WriteLine("");
             ray[i] = num1 * ray[i-1];
             Console.Write(ray[i] + " ");
+            if (col==cnum-1) {Console.Write(ray[cnum]);}
         }
         Console.Write(ray[i] + " ");
 }
