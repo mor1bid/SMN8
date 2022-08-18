@@ -124,7 +124,8 @@ for (int bar = 0; bar<bnum; bar++)
             ray[i] = num1;
             Console.Write(ray[i] + " ");
         }
-        if (bar==1) { num1+=j; }
+        if (bar==1) 
+        { while(num1<12) { num1+=j; } }
             if (num1>=12) 
             {
                 Console.WriteLine("");
