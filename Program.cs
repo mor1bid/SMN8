@@ -1,5 +1,7 @@
 ﻿void DZ1() 
 {
+    
+Console.WriteLine("54.");
 Random ra = new Random();
 int bnum = ra.Next(3, 6);
 int cnum = ra.Next(3, 6);
@@ -46,6 +48,7 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
 
 void DZ2() 
 {
+Console.WriteLine("56.");
 Random ra = new Random();
 int bnum = ra.Next(2, 11);
 int cnum = ra.Next(7, 18);
@@ -78,61 +81,34 @@ Console.WriteLine();
 
 void DZ3() 
 {
-Random ra = new Random();
+int n = 4;
+int[,] tab = new int[n, n];
+int temp = 1;
 int i = 0;
-int bnum = 4;
-int cnum = 4;
-int si = bnum*cnum;
-int[] ar = new int [si];
-int[] ray = new int [si];
-//int [] ray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
-//int [] ray = {1, 2, 3, 4, 12, 13, 14, 5, 11, 16, 15, 6, 10, 9, 8, 7};
-int [,] tab = new int[bnum, cnum];
-int num1=0;
-int j1=ray[9];
-for (int bar = 0; bar<bnum; bar++) 
+int j = 0;
+while (temp <= tab.GetLength(0) * tab.GetLength(1))
 {
-    // for (int j = 1, col = 0; col<cnum; i++, col++)
-    // {
-    //     if (bar==0)
-    //     {
-    //         Console.Write(ray[i] + " ");
-    //     }
-    //     if (bar==1 && num1>=ray[11])
-    //     {
-    //         Console.WriteLine("");
-    //         Console.Write(ray[i] + " ");
-    //         if (col==cnum-1) 
-    //         {
-    //             Console.Write($"{ray[cnum-1]}" + " ");
-    //         }
-    //     }
-    //     if (bar==2)
-    //     {
-    //         Console.WriteLine("");
-    //         Console.Write($"{ray[11]-1}" + " ");
-    //         Console.Write($"{ray[12]+3}" + " ");
-    //         if (col==cnum-1) 
-    //         {
-    //             Console.Write($"{ray[cnum-1]+cnum}" + " ");
-    //         }
-    //     }
-    for (int j = 1, col = 0; col<cnum; i++, col++) 
-    {
-        num1+=j;
-        ray[i] = num1;
-        while (bar==0) 
-        {Console.Write(ray[i] + " "); bar++;}
-        if (bar>0 && ray[i]==ray[cnum] && num1>ray[cnum]*cnum) {ar[i] = num1;}
-        else
-        {
-            //Console.WriteLine("");
-            ray[i] = num1;
-            Console.Write(ray[i] + " ");
-            if (bar>0 && col==cnum-1) {Console.Write(ray[cnum]);}
-        }
+    tab[i, j] = temp;
+    temp++;
+    if (i <= j + 1 && i + j < tab.GetLength(1) - 1) j++;
+    else if (i < j && i + j >= tab.GetLength(0) - 1) i++;
+    else if (i >= j && i + j > tab.GetLength(1) - 1) j--;
+    else i--;
 }
-Console.WriteLine("");
+WriteArray(tab);
+void WriteArray (int[,] ray)
+{
+  for (int i = 0; i < ray.GetLength(0); i++)
+  {
+    for (int j = 0; j < ray.GetLength(1); j++)
+    {
+      if (ray[i,j] / 10 <= 0)
+      Console.Write($" {ray[i,j]} ");
+
+      else Console.Write($"{ray[i,j]} ");
+    }
+    Console.WriteLine();
+  }
 }
 }
 Console.WriteLine();
