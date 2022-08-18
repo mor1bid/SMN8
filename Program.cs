@@ -25,18 +25,20 @@ Console.WriteLine();
         {
             int tmp = ray[col];
             ray[col] = ray[col+1];
+            Console.Write(ray[col] + "\t");
             ray[col+1] = tmp;
         }
      }
+     Console.WriteLine("");
  }
- for (int bar = 0; bar<bnum; bar++)
- {
-    for (int col = 0; col<cnum; col++)
-    {
-        Console.Write(ray[col] + "\t");
-    }
- }
-    Console.WriteLine("");
+//  for (int bar = 0; bar<bnum; bar++)
+//  {
+//     for (int col = 0; col<cnum; col++)
+//     {
+//         Console.Write(ray[col] + "\t");
+//     }
+//  }
+//     Console.WriteLine("");
 }
 Console.WriteLine("");
 
