@@ -26,22 +26,22 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++)
             int tmp = ray[col];
             ray[col] = ray[col+1];
             ray[col+1] = tmp;
+            Console.Write(ray[i] + "\t");
         }
-    }
     //for (int j = 0, col = 0; col<cnum; col++, j++)
     //{
     //    Console.Write(ray[i] + "\t");
-    //}
-    //Console.WriteLine("");
-}
-for (int i = 0, bar = 0; bar<bnum; bar++)
-{
-    for (int col = 0; col<cnum; col++, i++)
-    {
-        Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
 }
+// for (int i = 0, bar = 0; bar<bnum; bar++)
+// {
+//     for (int col = 0; col<cnum; col++, i++)
+//     {
+//         Console.Write(ray[i] + "\t");
+//     }
+//     Console.WriteLine("");
+// }
 }
 
 void DZ2() 
