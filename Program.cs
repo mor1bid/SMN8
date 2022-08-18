@@ -98,18 +98,18 @@ for (int bar = 0; bar<bnum; bar++)
             Console.Write(ray[i] + " ");
             //int tmp = ray[i];
         }
-        Console.WriteLine();
         if (bar==1 && num1>=ray[11])
         {
+            Console.WriteLine("");
             Console.Write(ray[i] + " ");
             if (col==cnum-1) 
             {
                 Console.Write($"{ray[cnum-1]}" + " ");
             }
         }
-        Console.WriteLine();
         if (bar==2)
         {
+            Console.WriteLine("");
             Console.Write($"{ray[11]-1}" + " ");
             Console.Write($"{ray[12]+3}" + " ");
             if (col==cnum-1) 
