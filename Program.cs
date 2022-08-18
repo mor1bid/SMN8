@@ -33,7 +33,7 @@ Console.WriteLine();
  {
     for (int col = 0; col<cnum; col++)
     {
-        Console.Write(ray[col]);
+        Console.Write(ray[col] + "\t");
     }
  }
     Console.WriteLine("");
