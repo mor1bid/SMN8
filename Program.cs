@@ -20,7 +20,7 @@ Console.WriteLine();
 int bord = bnum;
 for(int j = 0; j<si; j++, bord--) 
 {
-for (int i = 0, bar = 0; bar<bord;)
+for (int i = 0, bar = bnum; bar>0; bar--)
 {
     for (int col = 0; col<cnum-1; col++)
     {
