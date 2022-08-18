@@ -17,9 +17,9 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
+for (int j = 0, bar = 0; bar<bnum-1; bar++)
 {
-    for (int j = 0, col = 0; col<cnum-1; col++, j++)
+    for (int col = 0; col<cnum-1; col++, j++)
     {
         if (ray[j]< ray[j+1])
         {
@@ -28,9 +28,9 @@ for (int i = 0, bar = 0; bar<bnum-1; bar++, i++)
             ray[j+1] = tmp;
         }
     }
-    for (int j = 0, col = 0; col<cnum; col++, j++)
+    for (int i = 0, col = 0; col<cnum; col++, i++)
     {
-        Console.Write(ray[col] + "\t");
+        Console.Write(ray[i] + "\t");
     }
     Console.WriteLine("");
 }
