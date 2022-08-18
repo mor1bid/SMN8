@@ -17,32 +17,33 @@ for (int i = 0, bar = 0; bar<bnum; bar++)
     Console.WriteLine("");
 }
 Console.WriteLine();
-for (int j = 0, bar = 0; bar<bnum; bar++)
+for (int i = 0, bar = 0; bar<bnum-1; bar++)
 {
-    for (int col = 0; col<cnum; col++, j++)
+    for (int col = 0; col<cnum-1; col++, i++)
     {
-        if (ray[j]< ray[j+1])
+        if (ray[i]< ray[i+1])
         {
-            int tmp = ray[col];
-            ray[j] = ray[j+1];
-            ray[j+1] = tmp;
+            int tmp = ray[i];
+            ray[i] = ray[i+1];
+            ray[i+1] = tmp;
         }
     }
-    for (int i = 0, col = 0; col<cnum; col++, i++)
+    // for (int i = 0, col = 0; col<cnum; col++, i++)
+    // {
+    //     Console.Write(ray[i] + "\t");
+    // }
+    // Console.WriteLine("");
+}
+int i = 0;
+for (int bar = 0; bar<bnum; bar++)
+{
+    for (int col = 0; col<cnum; col++, i++)
     {
         Console.Write(ray[i] + "\t");
     }
-    Console.WriteLine("");
-}
-// for (int j=0, bar = 0; bar<bnum; bar++)
-// {
-//     for (int col = 0; col<cnum; col++, j++)
-//     {
-//         Console.Write(ray[j] + "\t");
-//     }
-//     Console.WriteLine("");
+        Console.WriteLine("");
 //     //j+=cnum;
-// }
+}
 }
 
 void DZ2() 
