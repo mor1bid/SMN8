@@ -25,8 +25,8 @@ Console.WriteLine();
         {
             int tmp = ray[col];
             ray[col] = ray[col+1];
-            Console.Write(ray[col] + "\t");
             ray[col+1] = tmp;
+            Console.Write(ray[col] + "\t");
         }
      }
      Console.WriteLine("");
