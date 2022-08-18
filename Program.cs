@@ -7,9 +7,9 @@ Random ra = new Random();
 int bnum = ra.Next(3, 6);
 int cnum = ra.Next(3, 6);
 int si = bnum*cnum;
-int [] ray = new int[si];
+int [] ar = new int[si];
 int [,] tab = new int[bnum, cnum];
-FRay(ray);
+FRay(ar);
 void FRay(int [] ray) 
 {
 for (int bar = 0; bar<bnum; bar++) 
@@ -31,11 +31,11 @@ for (int bar = 0; bar<bnum-1; bar++)
 {
     for (int col = 0; col<cnum-1; col++)
     {
-        if (ray[col]< ray[col+1])
+        if (ar[col]< ar[col+1])
         {
-            int tmp = tab[bar,col];
-            tab[bar,col] = tab[bar,col+1];
-            tab[bar,col+1] = tmp;
+            int tmp = ar[col];
+            ar[col] = ar[col+1];
+            ar[col+1] = tmp;
             //Console.Write(ray[i] + "\t");
         }
     }
